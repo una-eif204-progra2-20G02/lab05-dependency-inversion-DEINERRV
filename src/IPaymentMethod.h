@@ -8,6 +8,7 @@
 #include <string>
 
 class IPaymentMethod {
+public:
     virtual ~IPaymentMethod();
 
     virtual std::string sendPayment() = 0;
