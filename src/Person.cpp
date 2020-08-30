@@ -34,6 +34,10 @@ void Person::setDocumentId(int documentId) {
     Person::documentId = documentId;
 }
 
+PaymentManager Person::getPaymentManager(){
+    return paymentManager;
+}
+
 std::string Person::toString() const {
     return getFirstName() + " " + getLastName() + "\nDoc Id: " + std::to_string(getDocumentId());
 }

@@ -6,6 +6,7 @@
 #include "BankTransferSender.h"
 #include "CashSender.h"
 #include "CheckSender.h"
+#include "PaymentManager.h"
 
 /**
  * Abstract Class of Person
@@ -31,12 +32,15 @@ public:
 
     void setDocumentId(int documentId);
 
+    PaymentManager getPaymentManager();
+
 
     virtual std::string toString() const; // Virtual
 private:
     std::string firstName;
     std::string lastName;
     int documentId;
+    PaymentManager paymentManager;
 };
 
 #endif //UNIT_TESTING_01_BASIC_PERSON_H
