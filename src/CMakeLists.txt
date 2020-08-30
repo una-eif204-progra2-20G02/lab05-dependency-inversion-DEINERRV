@@ -7,4 +7,4 @@ set(SOURCES ${SOURCES})
 
 add_executable(${BINARY}_run ${SOURCES})
 
-add_library(${BINARY}_lib STATIC ${SOURCES} IPaymentMethod.h IPaymentMethod.cpp IPaymentMethod.h)
+add_library(${BINARY}_lib STATIC ${SOURCES} IPaymentMethod.h IPaymentMethod.cpp IPaymentMethod.h PaymentManager.cpp PaymentManager.h)
